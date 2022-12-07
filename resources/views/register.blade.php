@@ -9,7 +9,7 @@
     <title>Everest Thrill</title>
     <style type="text/css">
         .row {
-            padding-top: 100px;
+            padding-top: 60px;
             /* background: powderblue; */
         }
 
@@ -25,7 +25,7 @@
             padding: 15px;
         }
 
-        .form-signup h2,
+        .form-signup h2, h4,
         p {
             text-align: center;
         }
@@ -42,7 +42,8 @@
     <div class="row">>
         <form class="form-signup box" action="{{route('register')}}" method="POST">
             @csrf
-            <h2>Register</h2>
+            <h2>Everest Thrill</h2>
+            <h4>Register</h4>
             <p>Create your account</p>
             <div class="form-group">
                 <label class="form-label">Full Name</label><br />
