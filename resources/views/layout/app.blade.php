@@ -30,7 +30,7 @@
                         @guest
                         <a class="nav-link" href="">Login</a>
                         <a class="nav-link" href="{{route('register')}}">Signup</a>
-                        @endguest
+                        @endguest 
                     </div>
 
 
