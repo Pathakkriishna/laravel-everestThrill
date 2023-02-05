@@ -68,7 +68,10 @@
             <br />
             <div class="d-grid gap-2">
                 <input type="submit" class="btn btn-success" name="" value="Submit" />
-            </div>
+            </div><br>
+            <a href="{{route('googleLogin')}}" class="btn btn-light login_with w-100 mb-3">
+                        <img src="images/google-icon.svg" class="img-fluid me-3">Continue with Google</a>
+                    </a>
         </form>
     </div>
 

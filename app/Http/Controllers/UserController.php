@@ -73,6 +73,7 @@ class UserController extends Controller
             'email' => 'required|unique:admins',
             'password' => 'required',
         ]);
+        
 
         Admin::create([
             'name' => $req->name,

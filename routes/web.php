@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\socialAuthController;
 
 /*
 |--------------------------------------------------------------------------
@@ -25,3 +26,5 @@ Route::post('register',[UserController::class, 'register'])->name('register');
 Route::get('login',[HomeController::class, 'login'])->name('login');
 Route::post('login',[UserController::class, 'login'])->name('login');
 Route::get('logout',[HomeController::class, 'logout'])->name('logout');
+Route::get('/auth/google/redirect', [socialAuthController::class,'redirectToProvider'])->name('googleLogin');
+Route::get('/auth/google/callback', [socialAuthController::class,'handleCallback'])->name('google.login.callback');
